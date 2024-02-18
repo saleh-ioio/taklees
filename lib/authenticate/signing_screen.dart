@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'signIn_screen.dart';
+import 'sign_up_screen.dart';
 
 class signingScreen extends StatefulWidget {
   const signingScreen({super.key});
@@ -11,7 +13,7 @@ class _signingScreenState extends State<signingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 39, 132, 123),
+      backgroundColor: const Color.fromARGB(255, 39, 132, 123),
       body: Stack(
         alignment: AlignmentDirectional.topCenter,
         children: [
@@ -67,7 +69,12 @@ class _signingScreenState extends State<signingScreen> {
               child: Column(
                 children: [
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const sign_in_screen()));
+                    },
                     style: const ButtonStyle(
                         padding: MaterialStatePropertyAll(
                             EdgeInsets.symmetric(vertical: 8, horizontal: 50)),
@@ -82,7 +89,7 @@ class _signingScreenState extends State<signingScreen> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(top: 2),
+                    margin: const EdgeInsets.only(top: 2),
                     child: TextButton(
                       onPressed: () {},
                       style: const ButtonStyle(
@@ -101,9 +108,14 @@ class _signingScreenState extends State<signingScreen> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(top: 15),
+                    margin: const EdgeInsets.only(top: 15),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const singUpScreen()));
+                      },
                       style: const ButtonStyle(
                           padding: MaterialStatePropertyAll(
                               EdgeInsets.symmetric(

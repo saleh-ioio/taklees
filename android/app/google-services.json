@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "804404038436",
+    "project_id": "taklees-eefd6",
+    "storage_bucket": "taklees-eefd6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804404038436:android:93fb7b9efc6ea1e93381b1",
+        "android_client_info": {
+          "package_name": "com.example.safeer_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5e-nPuhiyIkrZDEr8Sf5MVeJwoctiwmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

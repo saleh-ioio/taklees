@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class signInScreen extends StatefulWidget {
-  const signInScreen({super.key});
+class singUpScreen extends StatefulWidget {
+  const singUpScreen({super.key});
 
   @override
-  State<signInScreen> createState() => _signInScreenState();
+  State<singUpScreen> createState() => _singUpScreenState();
 }
 
-class _signInScreenState extends State<signInScreen> {
+class _singUpScreenState extends State<singUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,34 +16,38 @@ class _signInScreenState extends State<signInScreen> {
         children: [
           Positioned(
               top: MediaQuery.of(context).size.height / 2,
-              child: Container(
+              child: SizedBox(
                 width: MediaQuery.of(context).size.width / 5 * 3,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text("Log In"),
-                    TextField(
+                    const Text("Sign up"),
+                    const TextField(
                       decoration: InputDecoration(
-                          border: OutlineInputBorder(), label: Text("Email")),
+                        border: OutlineInputBorder(),
+                        label: Text(
+                          "Name",
+                        ),
+                      ),
                     ),
-                    TextField(
+                    const TextField(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        label: Text(
+                          "Email",
+                        ),
+                      ),
+                    ),
+                    const TextField(
                       obscureText: true,
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           label: Text("password")),
                     ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            "Forget password?",
-                          )),
-                    ),
                     TextButton(
                         onPressed: () {},
-                        child: Text(
-                          "Sign In ",
+                        child: const Text(
+                          "Sign Up",
                         ))
                   ],
                 ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'signing_screen.dart';
+
 class SplashSceen extends StatefulWidget {
   const SplashSceen({super.key});
 
@@ -30,7 +32,7 @@ class _SplashSceenState extends State<SplashSceen> {
           Positioned(
             bottom: 100,
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
               decoration: const BoxDecoration(
                 borderRadius:
                     BorderRadius.horizontal(right: Radius.circular(20)),
@@ -69,7 +71,12 @@ class _SplashSceenState extends State<SplashSceen> {
                         Color.fromARGB(255, 238, 232, 169)),
                     backgroundColor: MaterialStatePropertyAll(
                         Color.fromARGB(255, 39, 132, 123))),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const signingScreen()));
+                },
                 child: const Text("Skip"),
               ))
         ],
